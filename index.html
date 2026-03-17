@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React State App (Plain JS)</title>
+    <title>Student Dashboard - useState Object</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="dashboard-top" class="dashboard-top">
+      <h1>Student Information Dashboard</h1>
+      <p>Manage student list with add/remove and object state updates in real time.</p>
+      <div class="stats-grid">
+        <div class="stat-card"><span class="stat-value" id="totalCount">5</span><br/>Total Students</div>
+        <div class="stat-card"><span class="stat-value" id="csCount">1</span><br/>Computer Science</div>
+        <div class="stat-card"><span class="stat-value" id="mathCount">1</span><br/>Mathematics</div>
+      </div>
+    </div>
     <div id="root"></div>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
